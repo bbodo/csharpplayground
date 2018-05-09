@@ -6,6 +6,7 @@
 - PSCsharptPlaygournd -> PowerShell Module
 - SuperGui -> .NET Framework / Windows Forms Application
 - WebApplication -> ASP.NET Core Web Application
+- XUnitTestProject -> Unit Testing
 
 ## TODO
 
