@@ -6,3 +6,9 @@
 - PSCsharptPlaygournd -> PowerShell Module
 - SuperGui -> .NET Framework / Windows Forms Application
 - WebApplication -> ASP.NET Core Web Application
+
+## TODO
+
+- [Entry Point](https://dot.net)
+- [Docs .NET](https://docs.microsoft.com/en-us/dotnet/)
+- [Docs Asp.NET](https://docs.microsoft.com/en-us/aspnet/)
