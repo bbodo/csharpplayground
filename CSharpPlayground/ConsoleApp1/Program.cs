@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySuperLib;
 
 namespace ConsoleApp1
 {
@@ -10,6 +11,15 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+
+
+            
+            Console.WriteLine("Hello World");
+
+            var fl = new FancyLib();
+            
+            Console.WriteLine(fl.SayHello("Bodo"));
+            Console.ReadLine();
         }
     }
 }
