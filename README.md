@@ -13,4 +13,5 @@
 - [Entry Point](https://dot.net)
 - [Docs .NET](https://docs.microsoft.com/en-us/dotnet/)
 - [Docs Asp.NET](https://docs.microsoft.com/en-us/aspnet/)
-- <s>Setting up my workspace</s>
+- <s>Setting up my descil-vm01 workspace</s>
+- <s>Setting up my workspace for working remotely using my home workstation</s>
