@@ -13,4 +13,4 @@
 - [Entry Point](https://dot.net)
 - [Docs .NET](https://docs.microsoft.com/en-us/dotnet/)
 - [Docs Asp.NET](https://docs.microsoft.com/en-us/aspnet/)
-
+- <s>Setting up my workspace</s>
