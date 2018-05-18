@@ -13,6 +13,7 @@
 - [Entry Point](https://dot.net)
 - [Docs .NET](https://docs.microsoft.com/en-us/dotnet/)
 - [Docs Asp.NET](https://docs.microsoft.com/en-us/aspnet/)
+---
 - Praktikumsbeschrieb
 ---
 - <s>Setting up my descil-vm01 workspace</s>
