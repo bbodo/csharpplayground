@@ -15,7 +15,7 @@ namespace ConsoleApp1
 
             var fl = new FancyLib();
             
-            Console.WriteLine(fl.SayHello("Bodo"));
+            Console.WriteLine(fl.SayHello("random"));
             Console.ReadLine();
         }
     }
