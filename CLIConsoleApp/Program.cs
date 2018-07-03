@@ -33,7 +33,7 @@ namespace CLIConsoleApp
             string s;
             do 
             {
-                s = Console.ReadLine().ToLower();
+                s = Console.ReadLine();
                 s = Stretch(s);
                 Console.WriteLine(s);
             } while (!string.IsNullOrEmpty(s));
@@ -47,7 +47,7 @@ namespace CLIConsoleApp
             {
                 a.Add(q.ToString());
                 i++;
-                if ("aeiousöüäèé".Contains(q.ToString()))
+                if ("aeiousöüäèé".Contains(q.ToString().ToLower()))
                 {
                     for (int j = i + 1; j < 5+i; j++)
                     {
@@ -101,6 +101,12 @@ namespace CLIConsoleApp
             {
                 Console.WriteLine("Good bye!");
             }
+            string a = "a";
+            string b = "b";
+            string c = "c";
+
+            Console.WriteLine("{0},{1},{2}", a, b, c);
+            Console.WriteLine($"{a}, {b}, {c}");
         }
 
 
@@ -116,7 +122,11 @@ namespace CLIConsoleApp
             {
                 Console.WriteLine(x + 1);  // Overflow
             }
+
+
         }
+
+       
 
 
     }
