@@ -1,9 +1,10 @@
 # CsharpPlayground
 
+- AsyncExampleWPF -> WPF 
 - ConsoleApp1 -> .NET Framework
-- ConsoleApp2 -> .NET Core
+- ConsoleApp2 & CLIConsoleApp -> .NET Core
 - MySuperLib -> .NET Standard Library
-- PSCsharpPlaygournd -> PowerShell Module
+- PSCsharpPlayground -> PowerShell Module
 - SuperGui -> .NET Framework / Windows Forms Application
 - WebApplication -> ASP.NET Core Web Application
 - XUnitTestProject -> Unit Testing
