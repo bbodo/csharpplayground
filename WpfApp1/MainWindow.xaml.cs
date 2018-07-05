@@ -1,12 +1,12 @@
 ﻿// Add the following using directives, and add a reference for System.Net.Http.  
-using System.Net.Http;
-using System.IO;
-using System.Net;
-using System.Windows;
-using System.Threading.Tasks;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
-using System.Windows.Input;
+using System.Net;
+using System.Threading.Tasks;
+using System.Windows;
 
 namespace AsyncExampleWPF
 {
@@ -18,35 +18,48 @@ namespace AsyncExampleWPF
             resultsTextBox.Clear();
         }
 
-        int ClickCount = 0;
+        int clickCount = 0;
 
         // does not even return a task because it is simply an event handler
         private async void startButton_Click(object sender, RoutedEventArgs e)
         {
             //resultsTextBox.Clear();
-            ClickCount += 1;
+            clickCount += 1;
             startButton.IsEnabled = false;
+            var s = new Stopwatch();
 
-            if(ClickCount == 1)
+            if(clickCount == 1)
             {
                 resultsTextBox.Text += "\n===================== With synchronous processing: \n note the frozen, uncloseable window\n";
+                s.Start();
                 SumPageSizes();
+                s.Stop();
+                resultsTextBox.Text += Environment.NewLine + "===================== Total Time: " + s.ElapsedMilliseconds.ToString() + Environment.NewLine;
+                s.Reset();
             }
 
-            if(ClickCount == 2)
+            if(clickCount == 2)
             {
                 resultsTextBox.Text += "\n===================== With sequential asynchronous processing\n";
                 // Two-step async call.
+                s.Start();
                 Task Task1 = SumPageSizesAsync_Standard();
                 await Task1;
+                s.Stop();
+                resultsTextBox.Text += Environment.NewLine + "===================== Total Time: " + s.ElapsedMilliseconds.ToString() + Environment.NewLine;
+                s.Reset();
             }
 
 
-            if(ClickCount == 3)
+            if(clickCount == 3)
             {
                 resultsTextBox.Text += "\n===================== With Task.WhenAll() / parallel processing";
                 // One-step async call.  
+                s.Start();
                 await SumPageSizesAsync_Parallel();
+                s.Stop();
+                resultsTextBox.Text += Environment.NewLine + "===================== Total Time: " + s.ElapsedMilliseconds.ToString() + Environment.NewLine;
+                s.Reset();
             }
             resultsTextBox.Text += "\r\nControl returned to startButton_Click.\r\n";
             startButton.IsEnabled = true;
