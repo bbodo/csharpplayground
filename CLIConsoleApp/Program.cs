@@ -24,7 +24,7 @@ namespace CLIConsoleApp
             Console.WriteLine("Try and Catch division exception: 1 / ??? = too few args in string[] arg, caught->goodbye");
             string[] d = { "1" };
             TryCatch(d);
-            Console.WriteLine("Try and Catch division exception: 1 / 0 = checked 0 division, uncaught");
+            Console.WriteLine("Try and Catch division exception: 1 / 0 = checked 0 division, uncaught, goodbye not reached");
             string[] e = { "1", "0" };
             string confirm = "Do you want to divide by zero now? (checked, no way to catch)";
             Console.WriteLine(confirm);
