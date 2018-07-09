@@ -19,6 +19,7 @@ namespace Prime.UnitTests.Services
 
             Assert.False(result, "1 should not be prime");
         }
+
         [Theory]
         [InlineData(-1)]
         [InlineData(0)]
@@ -29,6 +30,7 @@ namespace Prime.UnitTests.Services
 
             Assert.False(result, $"{value} should not be prime");
         }
+
         [Theory]
         [InlineData(3)]
         [InlineData(5)]
@@ -40,6 +42,7 @@ namespace Prime.UnitTests.Services
 
             Assert.True(result, $"{value} should be prime");
         }
+
         [Theory]
         [InlineData(100)]
         [InlineData(110)]
