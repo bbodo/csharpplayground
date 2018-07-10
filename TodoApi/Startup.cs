@@ -23,6 +23,11 @@ namespace TodoApi
             services.AddDbContext<TodoContext>(opt => opt.UseInMemoryDatabase("TodoList"));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddSwaggerGen( options =>
+            {
+                options.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info { Title = "TODO", Description = "Blub" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,6 +46,11 @@ namespace TodoApi
             app.UseMvc();
             app.UseDefaultFiles();
             app.UseStaticFiles();
+            app.UseSwagger();
+            app.UseSwaggerUI(options =>
+            {
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "TODO API V1");
+            });
         }
     }
 }
