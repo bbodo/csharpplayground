@@ -1,0 +1,23 @@
+{
+  "name": "CsharpPlayground",
+  "version": "1.0.0",
+  "description": "- AsyncExampleWPF -> WPF \r - ConsoleApp1 -> .NET Framework\r - ConsoleApp2 & CLIConsoleApp -> .NET Core\r - MySuperLib -> .NET Standard Library\r - PSCsharpPlayground -> PowerShell Module\r - SuperGui -> .NET Framework / Windows Forms Application\r - WebApplication -> ASP.NET Core Web Application\r - XUnitTestProject -> Unit Testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/descil/csharpplayground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/descil/csharpplayground/issues"
+  },
+  "homepage": "https://github.com/descil/csharpplayground#readme",
+  "dependencies": {
+    "@aspnet/signalr": "^1.0.2"
+  }
+}
