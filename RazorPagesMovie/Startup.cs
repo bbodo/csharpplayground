@@ -63,6 +63,7 @@ namespace RazorPagesMovie
             }
 
             app.UseHttpsRedirection();
+            
             app.UseStaticFiles();
             //app.UseCookiePolicy();
 
@@ -70,8 +71,11 @@ namespace RazorPagesMovie
             app.UseSignalR(routes =>
             {
                 routes.MapHub<ChatHub>("/chatHub");
+                routes.MapHub<ChatHub>("/hub");
             });
             app.UseMvc();
+
+            app.UseDefaultFiles();
         }
     }
 }

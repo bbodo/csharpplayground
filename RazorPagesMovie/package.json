@@ -1,10 +1,13 @@
 {
-  "name": "CsharpPlayground",
+  "name": "RazorPagesMovie",
   "version": "1.0.0",
+  "private": true,
   "description": "- AsyncExampleWPF -> WPF \r - ConsoleApp1 -> .NET Framework\r - ConsoleApp2 & CLIConsoleApp -> .NET Core\r - MySuperLib -> .NET Standard Library\r - PSCsharpPlayground -> PowerShell Module\r - SuperGui -> .NET Framework / Windows Forms Application\r - WebApplication -> ASP.NET Core Web Application\r - XUnitTestProject -> Unit Testing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode=development --watch",
+    "release": "webpack --mode=production",
+    "publish": "npm run release && dotnet publish -c Release"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,15 @@
   "homepage": "https://github.com/descil/csharpplayground#readme",
   "dependencies": {
     "@aspnet/signalr": "^1.0.2"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "0.1.19",
+    "css-loader": "0.28.11",
+    "html-webpack-plugin": "3.2.0",
+    "mini-css-extract-plugin": "0.4.0",
+    "ts-loader": "4.4.1",
+    "typescript": "2.9.2",
+    "webpack": "4.12.0",
+    "webpack-cli": "3.0.6"
   }
 }
