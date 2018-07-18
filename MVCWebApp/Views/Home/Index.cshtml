@@ -1,6 +1,28 @@
-﻿@{
+﻿@model WebsiteContext
+@{
     ViewData["Title"] = "Home Page";
 }
+
+
+<div>
+    <h3>Information about this website (outdated):</h3>
+    <website-information info=@Model />
+    <div condition="@Model.Approved">
+        <p>
+            This website has been approved yet: <strong surround="em"> @Model.Approved</strong>.<br />
+            Visit www.v-os.ca for more information.
+        </p>
+    </div>
+</div>
+<br>
+<br>
+<br>
+
+<hr />
+<br>
+<br>
+<br>
+
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
     <ol class="carousel-indicators">
