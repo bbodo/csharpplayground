@@ -22,7 +22,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoApi", "TodoApi\TodoApi.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPagesMovie", "RazorPagesMovie\RazorPagesMovie.csproj", "{6525C10F-AFF6-4C14-B47D-AD6D72CD4D39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCWebApp", "MVCWebApp\MVCWebApp.csproj", "{3A5F6D8E-6CA3-4EDA-8541-C848A66FC960}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCWebApp", "MVCWebApp\MVCWebApp.csproj", "{3A5F6D8E-6CA3-4EDA-8541-C848A66FC960}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarterViewComp", "StarterViewComp\StarterViewComp.csproj", "{0EA3CCAC-FBBE-418B-BD8B-ABB93C1AC4BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +60,10 @@ Global
 		{3A5F6D8E-6CA3-4EDA-8541-C848A66FC960}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A5F6D8E-6CA3-4EDA-8541-C848A66FC960}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A5F6D8E-6CA3-4EDA-8541-C848A66FC960}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EA3CCAC-FBBE-418B-BD8B-ABB93C1AC4BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EA3CCAC-FBBE-418B-BD8B-ABB93C1AC4BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EA3CCAC-FBBE-418B-BD8B-ABB93C1AC4BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EA3CCAC-FBBE-418B-BD8B-ABB93C1AC4BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
